@@ -1,3 +1,2 @@
-# hi this is the sample test todo app - changes by local
-
+# hi this is the sample test todo app - changes by -git
 # created to apply knowledge to test
