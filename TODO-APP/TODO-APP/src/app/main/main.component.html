@@ -1,16 +1,18 @@
 <div class="main">
+    <div class="title">TODO LIST</div>
     <div class="header">
         <div class="textbar">
-            <input type="text" name="username" [(ngModel)] = "Todo">
+            <input type="text" name="username" placeholder={{placeholder_value}} [(ngModel)] = "Todo">
         </div>
         <div class="todobtn">
-            <button (click)="Add_todo(Todo)">TODO</button>
+            <button class="addbtn" (click)="Add_todo(Todo)">&#43;</button>
         </div>    
     </div>
     <div class="todobody" *ngFor = "let item of todos">
         <div class="todos">
-            <div class="todovalues">{{item}} </div>
-            <div class="icon"> <i (click)="removetodo(item)">&#10060;</i> </div>
+            <div class="icon"> <i (click)="removetodo(item)">&#10006;</i></div>
+            <div class="todovalue">{{item}} </div>    
+                  
         </div>        
     </div>    
     

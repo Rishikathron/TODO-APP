@@ -1,34 +1,69 @@
-.main{
-    overflow: auto;
-    display: flexbox;
-    background-color: aliceblue;
-}
 
 .main{
     display: flex;
     gap : 2rem;
     flex-flow: column;
+    background-color: #048399;
     text-align: center;
-    justify-content: center;
-    margin-top: 7%;
+    padding: 1rem;
+    width: fit-content;
+    margin-top: 7%;    
+    position: relative;
+    left: 40%;    
+    color: white;
+    border-radius: 1rem;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.title{
+    font-size: xx-large;
+    letter-spacing: 10px;      
 }
 
 .header{
     display: flex;
     gap : 2rem;
-    text-align: center;
-    justify-content: center;
-}
+    
+} 
 
-.todobody{
 
-}
 
 .todos{
     display: flex;
-    gap : 4rem;
-    position: relative;
-    text-align: center;
-    justify-content: center;
-    
+    gap : 2rem;
+}
+
+.icon, .todovalue {
+    font-size: x-large;
+}
+
+.icon{
+    color: rgb(54, 5, 99);
+}
+
+input{
+    background: transparent;
+    border: 0;
+    border-bottom: rgb(54, 5, 99) solid ;
+    outline: none;
+    font-size:large;
+    padding: 10px;
+    color: inherit;
+}
+
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(54, 5, 99);
+    opacity: 0.5; /* Firefox */
+    font-size: larger;
+  }
+
+.addbtn{
+    background: transparent;
+    border: 0;
+    color: inherit;
+    size: 1rem;
+    font-size: 3.5rem;
+    color:rgb(54, 5, 99);
 }

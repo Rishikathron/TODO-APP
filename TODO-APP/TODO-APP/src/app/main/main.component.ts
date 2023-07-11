@@ -7,9 +7,15 @@ import { Component } from '@angular/core';
 })
 export class MainComponent {
   Todo : string = ""
-  todos:string[] = ["rishi","var"]
+  todos:string[] = ["rishi","haiiiiiiiii","hellowordddddd"]
+  placeholder_value : string = "todo..."
+
   public Add_todo(value : string){
-    this.todos.push(value);
+    if(value != ""){
+      this.todos.push(value);
+    }else{
+      this.placeholder_value = "Enter a todo..."
+    }
     console.log(this.todos);    
   }
 
