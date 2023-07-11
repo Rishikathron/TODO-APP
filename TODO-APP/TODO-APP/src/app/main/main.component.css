@@ -1,0 +1,34 @@
+.main{
+    overflow: auto;
+    display: flexbox;
+    background-color: aliceblue;
+}
+
+.main{
+    display: flex;
+    gap : 2rem;
+    flex-flow: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+.header{
+    display: flex;
+    gap : 2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.todobody{
+
+}
+
+.todos{
+    display: flex;
+    gap : 4rem;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    
+}
