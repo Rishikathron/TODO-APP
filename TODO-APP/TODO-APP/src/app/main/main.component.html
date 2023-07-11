@@ -2,10 +2,10 @@
     <div class="title">TODO LIST</div>
     <div class="header">
         <div class="textbar">
-            <input type="text" name="username" placeholder={{placeholder_value}} [(ngModel)] = "Todo">
+            <input type="text" name="username" placeholder={{placeholder_value}} [(ngModel)] = "Todo" (keyup.enter) = "Add_todo(Todo)" >
         </div>
-        <div class="todobtn">
-            <button class="addbtn" (click)="Add_todo(Todo)">&#43;</button>
+        <div class="todobtn"  >
+            <button class="addbtn"  (click)="Add_todo(Todo)">&#43;</button>
         </div>    
     </div>
     <div class="todobody" *ngFor = "let item of todos">

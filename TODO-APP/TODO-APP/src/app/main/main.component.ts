@@ -12,11 +12,12 @@ export class MainComponent {
 
   public Add_todo(value : string){
     if(value != ""){
-      this.todos.push(value);
+      this.todos.push(value);      
     }else{
-      this.placeholder_value = "Enter a todo..."
+      this.placeholder_value = "Empty todo..."
     }
-    console.log(this.todos);    
+    console.log(this.todos);  
+    this.Todo = ""  
   }
 
   public removetodo(value:string){
