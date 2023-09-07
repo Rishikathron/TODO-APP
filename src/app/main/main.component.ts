@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class MainComponent {
   Todo : string = ""
-  todos:string[] = ["rishi","haiiiiiiiii","hellowordddddd"]
+  todos:string[] = []
   placeholder_value : string = "todo..."
 
   public Add_todo(value : string){
